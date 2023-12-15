@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Conditional_Rendering from './Components/Conditional_Rendering';
+import Form_Validation from './Components/Form_Validation';
 function App() {
 
   return (
     <div>
 
-      <Conditional_Rendering />
+      <Form_Validation />
 
     </div>
   )
