@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Hide_Unhide_elements from './Components/Hide_Unhide_elements';
+import HandleForm from './Components/HandleForm';
 function App() {
 
   return (
     <div>
 
-      <Hide_Unhide_elements />
+      <HandleForm />
 
     </div>
   )
