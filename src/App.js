@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Form_Validation from './Components/Form_Validation';
+import Passing_function from './Components/Passing_function';
 function App() {
-
+  function getData(){
+    alert("This text from parent component")
+  }
   return (
     <div>
-
-      <Form_Validation />
-
+      <Passing_function data ={getData}/>
     </div>
   )
 }
