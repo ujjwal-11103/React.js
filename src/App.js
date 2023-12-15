@@ -1,11 +1,11 @@
-import React,{useState} from 'react';
-import GetInputBoxValue from './Components/GetInputBoxValue';
+import React, { useState } from 'react';
+import Hide_Unhide_elements from './Components/Hide_Unhide_elements';
 function App() {
 
   return (
-    <div> 
+    <div>
 
-      <GetInputBoxValue/>
+      <Hide_Unhide_elements />
 
     </div>
   )
