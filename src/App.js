@@ -1,10 +1,26 @@
-import React, { useState } from 'react';
-import ShouldComponentUpdate from './Components/ShouldComponentUpdate';
-function App() {
-  return (
-    <div>
-      <ShouldComponentUpdate />
-    </div>
-  )
+import React, { Component } from 'react'
+import ComponentWillMount from './Components/ComponentWillMount';
+
+export default class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      status: true
+    }
+  }
+  render() {
+    return (
+      <div>
+        {
+          this.state.status ?
+            <ComponentWillMount /> :
+            <h1>Component Unmounted</h1>
+        }
+
+        <button onClick={() => this.setState({
+          status: !this.state.status
+        })}> Toggle</button>
+      </div>
+    )
+  }
 }
-export default App;   
