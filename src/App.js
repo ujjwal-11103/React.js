@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import Passing_function from './Components/Passing_function';
+import Render_life_cycle_method from './Components/Render_life_cycle_method';
 function App() {
-  function getData(){
-    alert("This text from parent component")
-  }
+  const [data1, setData1] = React.useState("Testing-1")
   return (
     <div>
-      <Passing_function data ={getData}/>
+      <Render_life_cycle_method data={data1} />
+      <button onClick={() => setData1("Testing-2")}>Click</button>
     </div>
   )
 }
