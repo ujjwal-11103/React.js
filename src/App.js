@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import ComponentDidUpdate from './Components/ComponentDidUpdate';
+import ShouldComponentUpdate from './Components/ShouldComponentUpdate';
 function App() {
   return (
     <div>
-      <ComponentDidUpdate />
+      <ShouldComponentUpdate />
     </div>
   )
 }
