@@ -1,6 +1,6 @@
 import React from 'react'
-
 export default function ArrayWithMapFunction() {
+
     // const students = ['raj', 'ujjwal', 'prajwal']
 
     const object = [

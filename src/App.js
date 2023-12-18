@@ -1,9 +1,9 @@
 import React from 'react'
-import ArrayWithMapFunction from './Components/ArrayWithMapFunction'
+import ListWithTable from './Components/ListWithTable'
 export default function App() {
   return (
     <div>
-      <ArrayWithMapFunction />
+      <ListWithTable />
     </div>
   )
 }
