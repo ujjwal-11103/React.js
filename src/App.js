@@ -1,9 +1,9 @@
 import React from 'react'
-import ListWithTable from './Components/ListWithTable'
+import NestedList from './Components/NestedList'
 export default function App() {
   return (
     <div>
-      <ListWithTable />
+      <NestedList />
     </div>
   )
 }
