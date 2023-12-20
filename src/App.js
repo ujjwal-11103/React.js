@@ -1,25 +1,9 @@
-import React, { PureComponent } from 'react'
-import PureComponentsProps from './Components/PureComponentsProps';
-export default class App extends PureComponent {
-  constructor() {
-    super(); {
-      this.state = {
-        count: 1
-      }
-    }
-  }
-  render() {
-    console.log("Re-renderd");
-    return (
-      <div>
-
-        <PureComponentsProps data={this.state.count} />
-        <button onClick={() => this.setState({ count: 1 })}>Click</button>
-
-        {/* Since count here it is one (1) only so since the pagee is not updated  then also it will re render the page*/}
-        {/* therefore to prevent this we use pure component it only updates the page when there is any change in the document(page) */}
-
-      </div>
-    )
-  }
+import React from 'react'
+import UseMemo from './Components/UseMemo'
+export default function App() {
+  return (
+    <div>
+      <UseMemo />
+    </div>
+  )
 }
