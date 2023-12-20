@@ -1,9 +1,9 @@
 import React from 'react'
-import UseMemo from './Components/UseMemo'
+import RefClassComp from './Components/RefClassComp'
 export default function App() {
   return (
     <div>
-      <UseMemo />
+      <RefClassComp />
     </div>
   )
 }
