@@ -1,9 +1,9 @@
 import React from 'react'
-import RefClassComp from './Components/RefClassComp'
+import UseRef from './Components/UseRef'
 export default function App() {
   return (
     <div>
-      <RefClassComp />
+      <UseRef />
     </div>
   )
 }
