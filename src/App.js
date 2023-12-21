@@ -1,9 +1,9 @@
 import React from 'react'
-import ControlledComponent from './Components/ControlledComponent'
+import UncontrolledComponent from './Components/UncontrolledComponent'
 export default function App() {
   return (
     <div>
-      <ControlledComponent />
+      <UncontrolledComponent />
     </div>
   )
 }
