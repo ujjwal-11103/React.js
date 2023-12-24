@@ -1,20 +1,21 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 export default function Navigation() {
     return (
         <div>
 
             <h1>Navigation</h1>
-            <ul>
 
-                <li><Link to='/Home'>Home</Link></li>
-                <li><Link to='/About'>About</Link></li>
-                <li><Link to='/Contact'>Contact</Link></li>
-                <li> <Link to='/User/Ujjwal'>Ujjwal</Link></li>
-                <li> <Link to='/User/Prajwal'>Prajwal</Link></li>
+            <ul className='links'>
+
+                <li><NavLink className="Li-items" to='/Home'>Home</NavLink></li>
+                <li><NavLink className="Li-items" to='/About'>About</NavLink></li>
+                <li><NavLink className="Li-items" to='/Contact'>Contact</NavLink></li>
+                <li><NavLink className="Li-items" to='/User/Ujjwal'>Ujjwal</NavLink></li>
+                <li><NavLink className="Li-items" to='/User/Prajwal'>Prajwal</NavLink></li>
 
                 {/* /Users/Prajwal <-- ye ja rha h udhr params ke andr */}
-                {/* When clicked on the link it goes to App.js then it searches the desired path then it goes to the user Component */}
+                {/* When clicked on the NavLink it goes to App.js then it searches the desired path then it goes to the user Component */}
 
             </ul>
         </div>

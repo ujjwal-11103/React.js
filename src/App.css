@@ -7,6 +7,38 @@
   pointer-events: none;
 }
 
+
+.links {
+  display: flex;
+  justify-content: right;
+  gap: 3vw;
+  margin-right: 2vw;
+}
+
+.Li-items {
+  text-decoration: none;
+  color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -32,6 +64,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

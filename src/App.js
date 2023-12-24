@@ -1,7 +1,8 @@
 import React from 'react'
-
+import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import DefaultPage from './Components/Router/DefaultPage'
 import Home from './Components/Router/Home'
 import Contact from './Components/Router/Contact'
 import About from './Components/Router/About'
@@ -18,7 +19,8 @@ export default function App() {
 
         <Routes>
 
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<DefaultPage />} />
+          <Route path='/Home' element={<Home />} />
           <Route path='/About' element={<About />} />
           <Route path='/Contact' element={<Contact />} />
           <Route path='/User/:names' element={<User />} />
