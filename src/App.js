@@ -10,6 +10,7 @@ import Navigation from './Components/Router/Navigation'
 import PageNotFound from './Components/Router/PageNotFound'
 import User from './Components/Router/User'
 import UseParams from './Components/Router/UseParams'
+import UseNavigate from './Components/Router/UseNavigate'
 export default function App() {
   return (
     <div>
@@ -27,6 +28,7 @@ export default function App() {
           <Route path='/User/:names' element={<User />} />
 
           <Route path='/UseParams' element={< UseParams />} />
+          <Route path='/UseNavigate' element={< UseNavigate />} />
 
           <Route path="/*" element={<PageNotFound />} />
 

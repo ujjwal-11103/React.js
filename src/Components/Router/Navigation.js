@@ -11,7 +11,13 @@ export default function Navigation() {
                 <li><NavLink className="Li-items" to='/Home'>Home</NavLink></li>
                 <li><NavLink className="Li-items" to='/About'>About</NavLink></li>
                 <li><NavLink className="Li-items" to='/Contact'>Contact</NavLink></li>
+
+
                 <li><NavLink className="Li-items" to='/UseParams'>Params</NavLink></li>
+                <li><NavLink className="Li-items" to='/UseNavigate'>useNavigate</NavLink></li>
+
+
+
                 <li><NavLink className="Li-items" to='/User/Ujjwal'>Ujjwal</NavLink></li>
                 <li><NavLink className="Li-items" to='/User/Prajwal'>Prajwal</NavLink></li>
 
