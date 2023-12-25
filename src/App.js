@@ -9,6 +9,7 @@ import About from './Components/Router/About'
 import Navigation from './Components/Router/Navigation'
 import PageNotFound from './Components/Router/PageNotFound'
 import User from './Components/Router/User'
+import UseParams from './Components/Router/UseParams'
 export default function App() {
   return (
     <div>
@@ -24,6 +25,8 @@ export default function App() {
           <Route path='/About' element={<About />} />
           <Route path='/Contact' element={<Contact />} />
           <Route path='/User/:names' element={<User />} />
+
+          <Route path='/UseParams' element={< UseParams />} />
 
           <Route path="/*" element={<PageNotFound />} />
 
