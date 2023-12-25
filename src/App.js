@@ -11,6 +11,8 @@ import PageNotFound from './Components/Router/PageNotFound'
 import User from './Components/Router/User'
 import UseParams from './Components/Router/UseParams'
 import UseNavigate from './Components/Router/UseNavigate'
+import JoinUS from './Components/Router/JoinUS'
+import Other from './Components/Router/Other'
 export default function App() {
   return (
     <div>
@@ -24,7 +26,14 @@ export default function App() {
           <Route path='/' element={<DefaultPage />} />
           <Route path='/Home' element={<Home />} />
           <Route path='/About' element={<About />} />
-          <Route path='/Contact' element={<Contact />} />
+
+          {/* Added Nested Routing Concept */}
+          <Route path='/Contact/' element={<Contact />} />
+          <Route path='/JoinUs' element={<JoinUS />} />
+          <Route path='/Other' element={<Other />} />
+
+
+
           <Route path='/User/:names' element={<User />} />
 
           <Route path='/UseParams' element={< UseParams />} />
