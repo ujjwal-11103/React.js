@@ -28,6 +28,9 @@ export default function Navigation() {
                 <li><NavLink className="Li-items" to='/UseLocation' state={{ name: 'Ujjwal' }}>UseLocation</NavLink></li>
                 {/* When you want to send some information while routing from one component to another we use state  */}
 
+                {/* Login */}
+                <li><NavLink className="Li-items" to='/Login'>Login</NavLink></li>
+
             </ul>
         </div>
     )

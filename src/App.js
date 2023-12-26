@@ -14,6 +14,8 @@ import UseNavigate from './Components/Router/UseNavigate'
 import JoinUS from './Components/Router/JoinUS'
 import Other from './Components/Router/Other'
 import UseLocation from './Components/Router/UseLocation'
+import Login from './Components/Router/Login'
+import ProtectedComponent from './Components/Router/Protected'
 export default function App() {
   return (
     <div>
@@ -25,8 +27,9 @@ export default function App() {
         <Routes>
 
           <Route path='/' element={<DefaultPage />} />
-          <Route path='/Home' element={<Home />} />
-          <Route path='/About' element={<About />} />
+
+          <Route path='/Home' element={<ProtectedComponent Component={Home} />} />
+          <Route path='/About' element={<ProtectedComponent Component={About} />} />
 
           {/* Added Nested Routing Concept */}
           <Route path='/Contact/' element={<Contact />} />
@@ -42,6 +45,8 @@ export default function App() {
 
 
           <Route path='/UseLocation' element={<UseLocation />} />
+
+          <Route path='/Login' element={<Login />} />
 
           <Route path="/*" element={<PageNotFound />} />
 
