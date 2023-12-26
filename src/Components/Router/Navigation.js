@@ -4,9 +4,9 @@ export default function Navigation() {
     return (
         <div>
 
-            <h1>Navigation</h1>
-
-            <ul className='links'>
+            {/* <h1>Navigation</h1> */}
+            <br /><br />
+            <ul className='links'><br /><br />
 
                 <li><NavLink className="Li-items" to='/Home'>Home</NavLink></li>
                 <li><NavLink className="Li-items" to='/About'>About</NavLink></li>
@@ -23,6 +23,10 @@ export default function Navigation() {
 
                 {/* /Users/Prajwal <-- ye ja rha h udhr params ke andr */}
                 {/* When clicked on the NavLink it goes to App.js then it searches the desired path then it goes to the user Component */}
+
+                {/* useLocation */}
+                <li><NavLink className="Li-items" to='/UseLocation' state={{ name: 'Ujjwal' }}>UseLocation</NavLink></li>
+                {/* When you want to send some information while routing from one component to another we use state  */}
 
             </ul>
         </div>

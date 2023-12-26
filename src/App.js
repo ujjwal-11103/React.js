@@ -13,6 +13,7 @@ import UseParams from './Components/Router/UseParams'
 import UseNavigate from './Components/Router/UseNavigate'
 import JoinUS from './Components/Router/JoinUS'
 import Other from './Components/Router/Other'
+import UseLocation from './Components/Router/UseLocation'
 export default function App() {
   return (
     <div>
@@ -38,6 +39,9 @@ export default function App() {
 
           <Route path='/UseParams' element={< UseParams />} />
           <Route path='/UseNavigate' element={< UseNavigate />} />
+
+
+          <Route path='/UseLocation' element={<UseLocation />} />
 
           <Route path="/*" element={<PageNotFound />} />
 
