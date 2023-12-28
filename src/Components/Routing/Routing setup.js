@@ -1,21 +1,22 @@
 import React from 'react'
-import { BrowserRouter, Router, Route, Routes, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Router, Route, Routes, Link } from 'react-router-dom'
 export default function Routing_setup() {
     return (
         <div>
-            <h1>Helo</h1>
-            <Link to='/Home'>Home</Link>
-            <Link to='/About'>About</Link>
-            <BrowserRouter>
+
+            <Router>
+                <Link to='/Home'>Home</Link>
+                <Link to='/About'>About</Link>
+
 
                 <Routes>
                     <Route path='/Home' element={<Home />} />
                     <Route path='/About' element={<About />} />
                 </Routes>
 
+            </Router>
 
-            </BrowserRouter>
-        </div>
+        </div >
     )
 }
 

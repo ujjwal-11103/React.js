@@ -1,42 +1,20 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-
+import { Routes, Route, Link } from 'react-router-dom'
+import Links from './Components/Routing/Links'
+import About from './Components/Routing/About'
+import Home from './Components/Routing/Home'
 export default function App() {
   return (
     <div style={{ textAlign: 'center' }}>
 
-      <Router>
-
-        <Link to='/Home'>Home</Link>
-        <Link to='/About'>About</Link>
-
-        <Routes>
-          <Route path='/Home' element={<Home />} />
-          <Route path='/About' element={<About />} />
-        </Routes>
-
-      </Router>
+      <Links />
+      <Routes>
+        <Route path='/Home' element={<Home />} />
+        <Route path='/About' element={<About />} />
+      </Routes>
 
 
-    </div>
-  )
-}
 
-function Home() {
-  return (
-    <div>
-      <h1>Home</h1>
-      <h1>This is Home Page</h1>
-    </div>
-  )
-}
-
-
-function About() {
-  return (
-    <div>
-      <h1>About</h1>
-      <h1>This is About Page</h1>
     </div>
   )
 }
