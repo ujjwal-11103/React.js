@@ -1,41 +1,16 @@
-import React, { useEffect, useState } from 'react';
-
+import React from 'react'
+import NoteState from './Context/notes/NoteSate'
+import Home from './Components/Router/Home'
 export default function App() {
-
-  const [name, setName] = useState()
-  const [email, setEmail] = useState()
-  const [mobile, setMobile] = useState()
-
-  function submit() {
-    let data = { name, email, mobile };
-    console.log(data);
-
-    fetch("https://api.openweathermap.org/data/2.5/weather?q=Mumbai%20&appid=c7848b1913cb882c176585e7bfc7f4c1",{
-      method : 'POST',
-      headers : {
-        'Accept' : 'application/json',
-        'Content-Type' : 'application/json'
-      },
-      body : JSON.stringify(data)
-    }).then((result)=>{
-      console.log("Resulr = ",result);
-    })
-  }
   return (
-    <div style={{ textAlign: 'center' }}>
-      <h1>Hello</h1>
+    <div>
+      <NoteState>
 
-      <input type="text" value={name} name='name' onChange={(e) => { setName(e.target.value) }} /><br /><br />
-      <input type="email" value={email} name='email' onChange={(e) => { setEmail(e.target.value) }} /><br /><br />
-      <input type="text" value={mobile} name='mobile' onChange={(e) => { setMobile(e.target.value) }} /><br /><br />
-      <button onClick={submit}>Sumit</button>
+        <Home />
 
+      </NoteState>
+
+      {/*</NoteState> isse wrap krne ka mtlb ki srae components or uske bhi andr ke components ko access mil jaye NoteState ka */}
     </div>
-  );
+  )
 }
-
-const cellStyle = {
-  border: '1px solid black',
-  padding: '8px',
-  textAlign: 'center',
-};
