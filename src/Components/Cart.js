@@ -3,7 +3,7 @@ import React from 'react'
 export default function Cart() {
     return (
         <div>
-
+            <h1 style={{ textAlign: 'center' }}>Action</h1>
             <div className='main'>
 
                 <div className="addCart">
