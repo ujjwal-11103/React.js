@@ -42,7 +42,7 @@
 .container {
   width: 10vw;
   height: 10vw;
-  background-color: aqua;
+  /* background-color: aqua; */
   display: flex;
   justify-content: space-around;
   align-items: center;
