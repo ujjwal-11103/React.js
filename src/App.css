@@ -22,7 +22,7 @@
 
 
 /* Cart */
-.main {
+/* .main {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -31,7 +31,6 @@
   flex-direction: row-reverse;
   gap: 8vw;
   padding: 5vw;
-  /* background-color: aqua; */
 }
 
 .main img {
@@ -42,25 +41,21 @@
 .container {
   width: 10vw;
   height: 10vw;
-  /* background-color: aqua; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   border: 2px solid black;
   border-radius: 10px;
-  /* padding: 2vw; */
 }
 
 
 .phone-img img {
   width: 6vw;
   height: 8vw;
-  /* border: 2px solid black; */
 }
 
 .btn button {
   background-color: #008CBA;
-  /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -76,14 +71,77 @@
 
 .btn button:hover {
   background-color: #04AA6D;
-  /* Green */
   color: white;
-}
+} */
 
 /*  */
 
+/* Redux cwh */
+
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw;
+}
+
+.btn_p {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 2px solid rgb(40, 30, 129);
+  border-radius: 10px;
+  transition-duration: 0.4s;
+
+}
+
+.btn_m {
+  background-color: #e72222;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 2px solid rgb(40, 30, 129);
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+
+.balance {
+  background-color: #0deb1f;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 2px solid rgb(40, 30, 129);
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  font-weight: 400;
+}
+
+.btn button:hover {
+  background-color: #04AA6D;
+  color: white;
+}
 
 
+/*  */
 
 
 

@@ -1,11 +1,10 @@
-import './App.css'
 import React from 'react'
-import Cart from './Components/Cart'
-import CartContainer from './Containers/CartContainer'
+import './App.css'
+import Startup from './Redux cwh/Components/home'
 export default function App() {
   return (
     <div>
-      <CartContainer />
+      <Startup />
     </div>
   )
 }

@@ -6,7 +6,7 @@ import Cart from '../Components/Cart'
 
     const mapStateToProps = state => ({
 
-    })
+    })  
 
     const mapDispatchToProps = dispatch => ({
         addToCartHandler: data => dispatch(addToCart(data))
